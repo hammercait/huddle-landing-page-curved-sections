@@ -14,9 +14,11 @@ body{
     padding:0;
     margin:0;
     overflow-x: hidden;
+    box-sizing:border-box;
 }
 
 header{
+    box-sizing:border-box;
     padding:30px 30px;
 }
 
@@ -87,12 +89,12 @@ header button:hover{
 }
 
 .stats{
-    display:grid;
-    grid-template-columns: 150px 150px;
-    grid-column-gap: 400px;
-    grid-template-rows: 200px;
+    width:100%;
     color:var(--very-dark-cyan);
+    display:flex;
+    flex-direction:row;
 }
+
 .stats img{
     height:30px;
     width:auto;
@@ -100,14 +102,21 @@ header button:hover{
 
 .stats h2{
     font-size:5em;
-    margin-top:0;
-    margin-bottom:0;
+    margin:0;
 }
 
 .stats p{
     width:200px;
     font-size:1em;
     color:hsl(210, 2%, 49%);
+}
+
+.left{
+    margin-right:100px;
+}
+
+.right{
+    margin-left:100px;
 }
 
 
@@ -118,6 +127,7 @@ header button:hover{
     background-image:url("images/bg-section-top-desktop-1.svg"), url("images/bg-section-bottom-desktop-1.svg");
     background-repeat: no-repeat;
     background-position: top, bottom;
+    box-sizing:border-box;
     background-size: 100% 20%;
     padding-top:100px;
     padding-bottom:100px
@@ -131,6 +141,7 @@ header button:hover{
     justify-content:center;
     background-color:var(--very-pale-blue);
     margin-top:10px;
+    box-sizing:border-box;
 }
 
 .text2{
@@ -192,7 +203,8 @@ header button:hover{
     background-position: top, bottom;
     background-size: 100% 20%;
     padding-top:100px;
-    padding-bottom:100px
+    padding-bottom:100px;
+    box-sizing:border-box;
 }
 
 .background-color2{
@@ -203,6 +215,7 @@ header button:hover{
     justify-content:center;
     background-color:var(--very-pale-blue);
     padding-top:35px;
+    box-sizing:border-box;
 }
 
 .text4{
@@ -233,6 +246,7 @@ header button:hover{
     align-items:center;
     margin-top:80px;
     margin-bottom:200px;
+    box-sizing:border-box;
 }
 
 .section5 h1{
@@ -262,6 +276,7 @@ footer{
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 25%;
+    box-sizing:border-box;
 
 }
 
@@ -280,6 +295,7 @@ footer{
     padding-left:50px;
     padding-right:50px;
     padding-bottom:100px;
+    box-sizing:border-box;
 }
 
 .left{
@@ -375,10 +391,6 @@ footer form{
 }
 
 
-
-
-
-
 @media screen and (max-width: 780px) {
 
 
@@ -445,13 +457,13 @@ header button{
 .section2{
     background-image:url("images/bg-section-top-mobile-1.svg"), url("images/bg-section-bottom-mobile-1.svg");
     background-size: 100% 15%;
-    width:100%;
+    box-sizing:border-box;
     margin-top:0px;
 }
 
 .background-color{
     display:flex;
-    flex-direction:column;
+    flex-wrap:wrap;
     align-items:center;
     justify-content:center;
     margin-top:5px;
@@ -484,7 +496,7 @@ header button{
 .section3{
     width:100%;
     display:flex;
-    flex-direction:column;
+    flex-wrap:wrap;
     justify-content:center;
     align-items:center;
     margin-top:80px;
@@ -514,11 +526,12 @@ header button{
     background-size: 100% 15%;
     width:100%;
     margin-top:0px;
+    box-sizing:border-box;
 }
 
 .background-color2{
     display:flex;
-    flex-direction:column;
+    flex-wrap:wrap;
     align-items:center;
     justify-content:center;
     margin-top:5px;
@@ -551,7 +564,7 @@ header button{
 .section5{
     width:100%;
     display:flex;
-    flex-direction:column;
+    flex-wrap:wrap;
     justify-content:center;
     align-items:center;
     margin-top:80px;
@@ -566,7 +579,7 @@ footer{
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
-    
+    box-sizing:border-box;
 }
 
 .background-color3{
